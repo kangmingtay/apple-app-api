@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "f607ebe6-ec0d-4155-acb6-739121667921",
+		"name": "Apple Assessment API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get racks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				},
+				"description": "return the total number of racks in the database"
+			},
+			"response": []
+		},
+		{
+			"name": "get rack-detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				},
+				"description": "retrieve a rack object by id"
+			},
+			"response": []
+		},
+		{
+			"name": "create rack",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				},
+				"description": "creates a rack object"
+			},
+			"response": []
+		},
+		{
+			"name": "update rack",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"height\": 5,\n    \"location\": \"row 9\",\n    \"color\": \"blue\",\n    \"pdus\": 2\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/items/racks/3/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"items",
+						"racks",
+						"3",
+						""
+					]
+				},
+				"description": "update a rack object"
+			},
+			"response": []
+		},
+		{
+			"name": "search racks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				},
+				"description": "allows user to search across all fields in rack objects"
+			},
+			"response": []
+		},
+		{
+			"name": "get pdu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get pdu-detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				},
+				"description": "retrieves a pdu object by id"
+			},
+			"response": []
+		},
+		{
+			"name": "create pdu",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				},
+				"description": "create a pdu object"
+			},
+			"response": []
+		},
+		{
+			"name": "update pdu",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/items/pdu/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"items",
+						"pdu",
+						""
+					]
+				},
+				"description": "update a pdu object"
+			},
+			"response": []
+		},
+		{
+			"name": "search pdus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				},
+				"description": "search pdu objects across brand, capacity & num_outputs"
+			},
+			"response": []
+		}
+	]
+}
