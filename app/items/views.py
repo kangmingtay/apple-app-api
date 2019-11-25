@@ -2,6 +2,7 @@ from rest_framework import status, generics, mixins
 from rest_framework.decorators import api_view
 from rest_framework.filters import SearchFilter
 from rest_framework.response import Response
+from rest_framework.reverse import reverse
 
 from core.models import Rack, Pdu 
 from items.serializers import RackSerializer, PduSerializer
@@ -10,6 +11,13 @@ error_messages = {
     'RETRIEVE_ERROR': 'Rack object could not found.',
     'UPDATE_ERROR': 'Failed to update rack object'
 }
+
+@api_view(['GET'])
+def api_root(request, format=None):
+    return Response([
+        reverse('items:racks-list', request=request, format=format),
+        reverse('items:pdu-list', request=request, format=format),
+    ])
 
 class RackView(generics.ListCreateAPIView):
     queryset = Rack.objects.all()
