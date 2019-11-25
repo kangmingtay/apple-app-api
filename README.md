@@ -1,11 +1,11 @@
 # Kang Ming's API
 
 ## Set Up
-<p>All you gotta do is run `docker-compose up` </p>
+<p>All you gotta do is run <code>docker-compose up</code> </p>
 
 ## Testing the API
 1. Install Postman 
-2. Import the Postman collection titled `Apple_Assessment_API.postman_collection.json`
+2. Import the Postman collection titled <code>Apple_Assessment_API.postman_collection.json</code>
 3. Run all the APIs in the collection
 
 ## API Design
